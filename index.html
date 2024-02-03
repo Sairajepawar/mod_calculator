@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mod Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="body-title">Modulo Calculator</div>
+      <form>
+        <div class="label-section">
+          <label>Dividend A :- </label>
+          <label>Modulus B :- </label>
+        </div>
+        <div class="input-section">
+          <input type="text" placeholder="Enter the Dividend" class="Dividend" oninput="debouncer()" onkeydown="shiftCursor(event,'Modulus')"/>
+          <input type="text" placeholder="Enter the Modulus" class="Modulus" oninput="debouncer()" onkeydown="shiftCursor(event,'Dividend')"/>
+        </div>
+      </form>
+      <div id="final-answer"></div>
+    </div>
+  </body>
+</html>
